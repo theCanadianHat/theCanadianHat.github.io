@@ -32,6 +32,6 @@ function Sprite(imagePath, numOfFrames){
 
 	this.updateImage = function (){
 		this.nextImage();
-		this.currentImage = this.imageArray[this.imageIndex];
+		this.currentImage = this.imageArray[this.currentFrameIndex];
 	}
 }
