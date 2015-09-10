@@ -16,5 +16,5 @@ function setup(){
 
 function draw(){
 	image(sprite.currentFrame,720/2,480/2);
-	sprite.updateImage();
+	sprite.updateFrame();
 }
