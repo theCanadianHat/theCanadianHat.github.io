@@ -3,7 +3,11 @@
 */
 
 var filepath = ["/res/player/test/sprite_test", ".png"];
-var sprite = new Sprite(filepath,5);
+var sprite;
+
+function preload(){
+	sprite = new Sprite(filepath,5);
+}
 
 function setup(){
 	createCanvas(720, 480);
