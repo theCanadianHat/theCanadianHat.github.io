@@ -8,7 +8,7 @@
 function Sprite(imagePath, numOfFrames){
 	this.imageArray = new Array(numOfFrames);
 	this.imageIndex = 0;
-	this.currentImage;
+	this.currentImage = null;
 
 	for(var i = 0; i < numOfFrames; i++){
 		this.imageArray[i] = p5.prototype.loadImage(imagePath[0]+(i+1).toString()+imagePath[1]);
