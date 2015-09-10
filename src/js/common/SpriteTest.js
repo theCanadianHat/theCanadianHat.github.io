@@ -12,7 +12,7 @@ var img;
 
 function setup(){
 	createCanvas(720, 480);
-	//img = loadImage("flower.jpg");
+	frameRate(60);
 }
 
 function draw(){
