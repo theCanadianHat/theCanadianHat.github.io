@@ -24,9 +24,9 @@ function Sprite(imagePath, numOfFrames){
 		loop around to start the fram sequence over.
 	*/
 	this.nextImage = function (){
-		this.imageIndex += 1;
-		if(this.imageIndex >= numOfFrames){
-			this.imageIndex = 0;
+		this.currentFrameIndex += 1;
+		if(this.currentFrameIndex >= numOfFrames){
+			this.currentFrameIndex = 0;
 		}
 	}
 
