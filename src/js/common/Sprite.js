@@ -5,13 +5,10 @@
 	the Entity it is attached to can draw it to the screen.
 */
 
-blah = function(){
-	return "BLAH";
-}
-
 function Sprite(imagePath, numOfFrames){
 	this.imageArray = new Array(numOfFrames);
 	this.imageIndex = 0;
+	this.currentImage;
 
 	for(var i = 0; i < numOfFrames; i++){
 		this.imageArray[i] = p5.prototype.loadImage(imagePath[0]+(i+1).toString()+imagePath[1]);
@@ -27,5 +24,10 @@ function Sprite(imagePath, numOfFrames){
 		if(this.imageIndex >= numOfFrames){
 			this.imageIndex = 0;
 		}
+	}
+
+	this.updateImage = function (){
+		this.nextImage();
+		this.currentImage = this.imageArray[this.imageIndex];
 	}
 }
