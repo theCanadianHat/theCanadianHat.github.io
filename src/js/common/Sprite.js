@@ -6,13 +6,17 @@
 */
 
 function Sprite(imagePath, numOfFrames){
-	this.imageArray = new Array(numOfFrames);
-	this.imageIndex = 0;
-	this.currentImage = null;
+	this.frameArray = new Array(numOfFrames);
+	this.currentFrameIndex = 0;
+	this.currentFrame = null;
 
+	//fill up the array with frmaes for the multi-framed-sprite
 	for(var i = 0; i < numOfFrames; i++){
-		this.imageArray[i] = p5.prototype.loadImage(imagePath[0]+(i+1).toString()+imagePath[1]);
+		this.frameArray[i] = p5.prototype.loadImage(imagePath[0]+(i+1).toString()+imagePath[1]);
 	}
+
+	//set the current frame to the first fram in the array
+	this.currentFrame = this.frameArray[this.currentFrameIndex];
 
 	/*
 		This function is used for sprites that have multiple frames. Every tick the current frame
