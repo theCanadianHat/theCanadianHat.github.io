@@ -11,6 +11,6 @@ function setup(){
 }
 
 function draw(){
-	image(sprite.imageArray[sprite.imageIndex],720/2,480/2);
+	image(sprite.currentImage,720/2,480/2);
 	sprite.updateImage();
 }
