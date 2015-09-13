@@ -4,8 +4,9 @@
 	an image thorough one class and paint it to the canvas from another.
 
 */
-String filepath = "";
-String fileType = "";
+
+String filepath = "mario_hammer.jpg";
+String fileType = "jpg";
 Loader l;
 Painter p;
 
