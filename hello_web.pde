@@ -13,10 +13,11 @@ void setup(){
 	//get the image loaded 
  	size(700,500);
   	l = new Loader(filepath,fileType);
+  	p = new Painter(l.getImage());
 }
 
 void draw(){
 	//get the image painted
-	p.paint(l.getImage());
+	p.paint();
 }
 
