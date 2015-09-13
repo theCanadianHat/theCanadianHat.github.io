@@ -7,18 +7,18 @@
 
 String filepath = "mario_hammer.jpg";
 String fileType = "jpg";
-Loader l;
-Painter p;
+Loader loader;
+Painter painter;
 
 void setup(){
 	//get the image loaded 
  	size(700,500);
-  	l = new Loader(filepath,fileType);
-  	p = new Painter(l.getImage());
+  	loader = new Loader(filepath,fileType);
+  	painter = new Painter(loader.getImage());
 }
 
 void draw(){
 	//get the image painted
-	p.paint();
+	painter.paint();
 }
 
