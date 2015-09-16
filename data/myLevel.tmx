@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="21" tileheight="21" nextobjectid="1">
+ <tileset firstgid="1" name="spritesheet" tilewidth="21" tileheight="21" spacing="2" tilecount="900">
+  <image source="../complete/finished game/images/spritesheet.png" width="692" height="692"/>
+ </tileset>
+ <layer name="background1" width="20" height="20">
+  <properties>
+   <property name="type" value="0"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzbzsTAsH0Uj+JRTBfsyziKR/HwwQBj7dXV
+  </data>
+ </layer>
+ <layer name="background2" width="20" height="20">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAN2MtEPbNagGbdpqJ56GARAbNbaGg3tcFAuxU5LAfaLSBATtzSy922jPSxhxoA3a1Dye3YAD3cT0yYDfVwBAA2mghf
+  </data>
+ </layer>
+ <layer name="collision" width="20" height="20">
+  <properties>
+   <property name="collision" value="true"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJybycDAMJPKmFqAVubVQPEcKpmHDuqQzK5CEqtBw+j2D4bww+ZOGKa3+3C5BVe80dp9uMKFWAwyS5CReu4DmQXCX6hsHsxMEQrdCjOLWgCXed8YIO5FdzMucXq7jxSA7GZauQ9mPqUYZBYAZvVKBg==
+  </data>
+ </layer>
+</map>
