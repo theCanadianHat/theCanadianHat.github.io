@@ -11,11 +11,11 @@ window.addEventListener("load",function() {
 
     //define scene
     Q.scene("level", function(stage){
-      Q.stageTMX("small_level.tmx", stage);
+      Q.stageTMX("myLevel.tmx", stage);
     });
 
     //load assets
-    Q.loadTMX("small_level.tmx", function(){
+    Q.loadTMX("myLevel.tmx", function(){
       Q.stageScene("level");
     });
     
