@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="21" tileheight="21" nextobjectid="4">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="21" tileheight="21" nextobjectid="7">
  <tileset firstgid="1" name="spritesheet" tilewidth="21" tileheight="21" spacing="2" tilecount="900">
   <image source="../images/spritesheet.png" width="692" height="692"/>
+  <tile id="19">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
  </tileset>
  <tileset firstgid="901" name="SpriteSheet" tilewidth="21" tileheight="21" spacing="2" tilecount="900">
   <image source="../images/spritesheet.png" width="692" height="692"/>
@@ -1225,6 +1230,6 @@
   </data>
  </layer>
  <objectgroup name="Object Layer 1">
-  <object id="1" name="palyer" gid="20" x="44.5" y="47.5909" width="21" height="21"/>
+  <object id="5" name="player" gid="20" x="49" y="49" width="21" height="21"/>
  </objectgroup>
 </map>
