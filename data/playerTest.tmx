@@ -818,6 +818,10 @@
   </data>
  </layer>
  <objectgroup name="Object Layer 1">
-  <object id="2" gid="20" x="104.5" y="48.5" width="21" height="21"/>
+  <object id="2" name="palyer" gid="20" x="104.5" y="48.5" width="21" height="21">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
