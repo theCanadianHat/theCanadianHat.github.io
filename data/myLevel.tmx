@@ -3,6 +3,9 @@
  <tileset firstgid="1" name="spritesheet" tilewidth="21" tileheight="21" spacing="2" tilecount="900">
   <image source="../images/spritesheet.png" width="692" height="692"/>
  </tileset>
+ <tileset firstgid="901" name="SpriteSheet" tilewidth="21" tileheight="21" spacing="2" tilecount="900">
+  <image source="../images/spritesheet.png" width="692" height="692"/>
+ </tileset>
  <layer name="background1" width="20" height="20">
   <properties>
    <property name="type" value="0"/>
@@ -1222,10 +1225,6 @@
   </data>
  </layer>
  <objectgroup name="Object Layer 1">
-  <object id="1" name="palyer" gid="20" x="44.5" y="47.5909" width="21" height="21">
-   <properties>
-    <property name="Class" value="Player"/>
-   </properties>
-  </object>
+  <object id="1" name="palyer" gid="20" x="44.5" y="47.5909" width="21" height="21"/>
  </objectgroup>
 </map>
