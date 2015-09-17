@@ -1222,7 +1222,7 @@
   </data>
  </layer>
  <objectgroup name="Object Layer 1">
-  <object id="1" gid="20" x="44.5" y="47.5909" width="21" height="21">
+  <object id="1" name="palyer" gid="20" x="44.5" y="47.5909" width="21" height="21">
    <properties>
     <property name="Class" value="Player"/>
    </properties>
