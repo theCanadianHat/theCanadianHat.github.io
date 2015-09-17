@@ -8,6 +8,7 @@ window.addEventListener("load",function() {
       height: 180,
       scaleToFit: true
     }).controls().touch();
+    //cheanged tmx
 
     Q.setImageSmoothing(false);
 
