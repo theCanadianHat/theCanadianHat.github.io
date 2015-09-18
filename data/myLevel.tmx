@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="21" tileheight="21" nextobjectid="5">
- <tileset firstgid="1" name="spritesheet" tilewidth="21" tileheight="21" spacing="2" tilecount="900">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="21" tileheight="21">
+ <tileset firstgid="1" name="spritesheet" tilewidth="21" tileheight="21" spacing="2">
   <image source="../images/spritesheet.png" width="692" height="692"/>
   <tile id="19">
    <properties>
@@ -416,6 +416,9 @@
   </data>
  </layer>
  <layer name="background2" width="20" height="20">
+   <properties>
+   <property name="type" value="0"/>
+  </properties>
   <data>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -1226,7 +1229,7 @@
    <tile gid="273"/>
   </data>
  </layer>
- <objectgroup name="Object Layer 1">
-  <object id="4" gid="20" x="213" y="61.5909" width="21" height="21"/>
+ <objectgroup name="Object Layer 1" width="20" height="20">
+  <object gid="20" x="42" y="54" width="21" height="21"/>
  </objectgroup>
 </map>
