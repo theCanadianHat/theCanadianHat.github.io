@@ -14,13 +14,13 @@ window.addEventListener("load",function() {
 
     //define scene "level"
     Q.scene("level", function(stage){
-      Q.stageTMX("playerTest.tmx", stage);
+      Q.stageTMX("small_level.tmx", stage);
     });
 
     //load assets
     //knows to look in "data" folder for tmx & json
     //looks in "images" folder for png
-    Q.loadTMX("playerTest.tmx, sprites.json, sprites.png", function(){
+    Q.loadTMX("small_level.tmx, sprites.json, sprites.png", function(){
       //compile the sheets for the sprites.png which needs sprites.json
       //using the json keys I can associate sprites with the right assests
       Q.compileSheets("sprites.png","sprites.json");
