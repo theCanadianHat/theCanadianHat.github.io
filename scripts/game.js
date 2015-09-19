@@ -15,6 +15,9 @@ window.addEventListener("load",function() {
     //define scene "level"
     Q.scene("level", function(stage){
       Q.stageTMX("myLevel.tmx", stage);
+      //get the palyer
+      var player = Q("Player").first();
+      stage.add("viewport").follow(player,{x:true, y:true});
     });
 
     //load assets
