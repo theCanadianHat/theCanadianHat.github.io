@@ -31,6 +31,26 @@ Quintus.ActionPlatformerEnemy = function(Q){
 			this._super(p, {vx: -50, defaultDirection: "left"});
 			//aiBounce makes the enemy change direction when it runs into a wall
 			this.add("2d, aiBounce, commonEnemy");
+		},
+		step: function(dt){
+			//get the direction of the enemy
+			var dirX = this.p.vx / Math.abs(this.p.vx); // 1 or -1
+			//check what is under the enemy
+			var ground = Q.stage().locate(this.p.x, this.p.y + this.p.h/2 + 1, Q.SPRITE_DEFAULT);
+			//check what is in front of the enemy
+			var nextElement = Q.stage().locate(this.p.x + dir * this.p.w/2, this.p.y + this.p.h/2 + 1, Q.SPRITE_DEFAULT);
+			var nextTile;
+
+			if(nextElement instanceof Q.TileLayer){
+				nextTile = true;
+			}
+
+			//if we are on the ground and about to walk off a cliff
+			if(!nextTile && ground){
+				//switch directions
+				this.p.vx = -this.p.vx;
+			}
+			this.p.flip = false;
 		}
 	});
 

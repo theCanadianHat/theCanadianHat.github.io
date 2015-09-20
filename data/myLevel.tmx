@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="21" tileheight="21" nextobjectid="5">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="21" tileheight="21" nextobjectid="8">
  <tileset firstgid="1" name="spritesheet" tilewidth="21" tileheight="21" spacing="2" tilecount="900">
   <image source="../images/spritesheet.png" width="692" height="692"/>
   <tile id="19">
@@ -1238,8 +1238,10 @@
  </layer>
  <objectgroup name="Object Layer 1">
   <object id="1" name="player" gid="20" x="22.6667" y="395.333" width="21" height="21"/>
-  <object id="2" gid="171" x="122.667" y="387.333" width="21" height="21"/>
-  <object id="3" gid="171" x="216.667" y="389.333" width="21" height="21"/>
-  <object id="4" gid="171" x="288.667" y="386.667" width="21" height="21"/>
+  <object id="2" name="blue alien 1" gid="171" x="122.667" y="387.333" width="21" height="21"/>
+  <object id="3" name="blue alien 2" gid="171" x="216.667" y="389.333" width="21" height="21"/>
+  <object id="4" name="blue alien 3" gid="171" x="288.667" y="386.667" width="21" height="21"/>
+  <object id="5" name="blue alien 4" gid="171" x="256" y="306.667" width="21" height="21"/>
+  <object id="6" name="blue alien 5" gid="171" x="122.667" y="310" width="21" height="21"/>
  </objectgroup>
 </map>
