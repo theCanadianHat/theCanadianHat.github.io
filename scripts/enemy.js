@@ -38,7 +38,7 @@ Quintus.ActionPlatformerEnemy = function(Q){
 			//check what is under the enemy
 			var ground = Q.stage().locate(this.p.x, this.p.y + this.p.h/2 + 1, Q.SPRITE_DEFAULT);
 			//check what is in front of the enemy
-			var nextElement = Q.stage().locate(this.p.x + dir * this.p.w/2, this.p.y + this.p.h/2 + 1, Q.SPRITE_DEFAULT);
+			var nextElement = Q.stage().locate(this.p.x + dirX * this.p.w/2, this.p.y + this.p.h/2 + 1, Q.SPRITE_DEFAULT);
 			var nextTile;
 
 			if(nextElement instanceof Q.TileLayer){
