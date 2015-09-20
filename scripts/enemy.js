@@ -9,8 +9,8 @@ Quintus.ActionPlatformerEnemy = function(Q){
 			entity.on("bump.left, bump.right, bump.bottom", function(collision){
 				//checking if the enemy ran into a player
 				if(collision.obj.isA("Player")){
-					console.log(collision);
-					console.log("you died");
+					//kill player
+					//take dmg etc
 				}
 			});
 			//when something collides with the top of the enemy
@@ -50,7 +50,7 @@ Quintus.ActionPlatformerEnemy = function(Q){
 				//switch directions
 				this.p.vx = -this.p.vx;
 			}
-			this.p.flip = false;
+			this.p.flip = "x";
 			// if(!nextTile && ground) {
 		 //        if(this.p.vx > 0) {
 		 //          if(this.p.defaultDirection == "right") {
