@@ -1,6 +1,6 @@
 {
 	"bee":{"sx":126,"sy":2,"cols":1,"tilew":18,"frames":1,"tileh":15},
-	"blue-alien":{"sx":105,"sy":2,"cols":1,"tilew":19,"frames":1,"tileh":19},	
+	"blue-alien":{"sx":105,"sy":2,"cols":1,"tilew":19,"frames":1,"tileh":18},	
 	"bug":{"sx":163,"sy":2,"cols":1,"tilew":18,"frames":1,"tileh":12},	
 	"bullet":{"sx":163,"sy":16,"cols":1,"tilew":7,"frames":1,"tileh":7},	
 	"ghost":{"sx":44,"sy":2,"cols":1,"tilew":17,"frames":1,"tileh":21},
