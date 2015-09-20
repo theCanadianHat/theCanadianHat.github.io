@@ -46,11 +46,30 @@ Quintus.ActionPlatformerEnemy = function(Q){
 			}
 
 			//if we are on the ground and about to walk off a cliff
-			if(!nextTile && ground){
-				//switch directions
-				this.p.vx = -this.p.vx;
-			}
-			this.p.flip = false;
+			// if(!nextTile && ground){
+			// 	//switch directions
+			// 	this.p.vx = -this.p.vx;
+			// }
+			// this.p.flip = false;
+			if(!nextTile && ground) {
+		        if(this.p.vx > 0) {
+		          if(this.p.defaultDirection == "right") {
+		            this.p.flip = "x";
+		          }
+		          else {
+		            this.p.flip = false;
+		          }
+		        }
+		        else {
+		          if(this.p.defaultDirection == "left") {
+		            this.p.flip = "x";
+		          }
+		          else {
+		            this.p.flip = false;
+		          }
+		        }
+		    	this.p.vx = -this.p.vx;
+		    }
 		}
 	});
 
