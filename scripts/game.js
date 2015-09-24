@@ -26,7 +26,8 @@ window.addEventListener("load",function() {
     Q.loadTMX("myLevel.tmx, sprites.json, sprites.png", function(){
       //compile the sheets for the sprites.png which needs sprites.json
       //using the json keys I can associate sprites with the right assests
-      Q.compileSheets("sprites.png","sprites.json","chad.png","chad.json");
+      Q.compileSheets("sprites.png","sprites.json");
+      // Q.compileSheets("chad.png","chad.json");
       //staging the screen
       //what ever is on the screen is staged
       Q.stageScene("level");
