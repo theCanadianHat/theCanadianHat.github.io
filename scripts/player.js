@@ -2,7 +2,7 @@ Quintus.ActionPlatformerPlayer = function(Q){
 	Q.Sprite.extend("Player", {
 		init: function(p){
 			this._super(p,{
-				sheet: "chad",
+				sheet: "player",
 				jumpSpeed: -300,
 				speed: 100,
 			});
