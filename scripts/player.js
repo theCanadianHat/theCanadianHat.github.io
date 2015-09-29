@@ -13,6 +13,10 @@ Quintus.ActionPlatformerPlayer = function(Q){
 		fireWeapon: function(){
 			//insert a new sprite for the bullet
 			//eventually use pooling
+			Q.stage().insert(new Q.Bullet({
+				x: p.x,
+				y: p.y
+			}));
 		}
 	});
 };
