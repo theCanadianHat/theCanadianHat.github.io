@@ -16,8 +16,8 @@ Quintus.ActionPlatformerPlayer = function(Q){
 			//eventually use pooling
 			var p = this.p;
 			Q.stage().insert(new Q.Bullet({
-				x: p.x,
-				y: p.y,
+				x: p.x + 15,
+				y: p.y + 15,
 				speed: 250
 			}));
 		}
