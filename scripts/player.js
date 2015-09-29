@@ -7,6 +7,7 @@ Quintus.ActionPlatformerPlayer = function(Q){
 				speed: 100,
 			});
 			this.add("2d, platformerControls");
+			//"fire" is mapped to spacebar
 			Q.input.on("fire",this,"fireWeapon");
 		},
 
