@@ -15,6 +15,7 @@ Quintus.ActionPlatformerPlayer = function(Q){
 			//insert a new sprite for the bullet
 			//eventually use pooling
 			Q.stage().insert(new Q.Bullet({
+				var p = this.p;
 				x: p.x,
 				y: p.y
 			}));
