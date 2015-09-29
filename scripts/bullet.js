@@ -11,8 +11,7 @@ Quintus.ActionPlatformerBullet = function(Q){
 		step: function(dt){
 			//check to see if the bullet is off screen
 			//I think
-			var stage = Q.stage();
-			if(this.p.x > stage.p.width || this.p.x < 0){
+			if(this.p.x > Q.width || this.p.x < 0){
 				this.destroy();
 			}
 		}
