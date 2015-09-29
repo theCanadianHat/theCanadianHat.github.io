@@ -1,5 +1,5 @@
 Quintus.ActionPlatformerBullet = function(Q){
-	Q.Sprite.extends("Bullet",{
+	Q.Sprite.extend("Bullet",{
 		init:function(p){
 			this._super(p,{
 				sheet: "bullet",
