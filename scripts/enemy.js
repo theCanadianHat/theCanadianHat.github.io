@@ -11,6 +11,10 @@ Quintus.ActionPlatformerEnemy = function(Q){
 				if(collision.obj.isA("Player")){
 					//kill player
 					//take dmg etc
+				}else if(collision.obj.isA("Bullet")){
+					//destroy the bullet and the bad guy
+					collision.obj.destroy();
+					this.destroy();
 				}
 			});
 			//when something collides with the top of the enemy

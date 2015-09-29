@@ -7,6 +7,12 @@ Quintus.ActionPlatformerPlayer = function(Q){
 				speed: 100,
 			});
 			this.add("2d, platformerControls");
+			Q.input.on("fire",this,"fireWeapon");
+		},
+
+		fireWeapon: function(){
+			//insert a new sprite for the bullet
+			//eventually use pooling
 		}
 	});
 };
