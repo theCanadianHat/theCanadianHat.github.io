@@ -7,6 +7,8 @@ Quintus.ActionPlatformerBullet = function(Q){
 			});
 			//detect collisions and movement
 			this.add("2d");
+			//so the bullet does not "fall"
+			this.p.gravity = 0;
 		},
 		step: function(dt){
 			//check to see if the bullet is off screen
