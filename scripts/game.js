@@ -4,7 +4,7 @@ window.addEventListener("load",function() {
     .include("Scenes, Sprites, 2D, Input, Touch, UI, TMX, Audio")
     .include("ActionPlatformerPlayer, ActionPlatformerEnemy, ActionPlatformerBullet") 
     .setup({
-      width: 320,   //to fit devices with a screne resolution of 1280 x 720
+      width: 640,   //to fit devices with a screne resolution of 1280 x 720
       height: 180,
       scaleToFit: true
     }).controls().touch();
@@ -14,7 +14,9 @@ window.addEventListener("load",function() {
 
     //define scene "level"
     Q.scene("level", function(stage){
-      Q.stageTMX("myLevel.tmx", stage);
+      stage.insert(new Q.Repeater({asset: "sky.png", speedX: 0.25, speedY: 0, type:0}));
+      stage.insert(new Q.Repeater({asset: "mountains.png", speedX: 0.25, speedY: 0, type:0}));
+      stage.insert(new Q.Repeater({asset: "ground.png", speedX: 0.25, speedY: 0, type:0}));
       //get the palyer
       var player = Q("Player").first();
       stage.add("viewport").follow(player,{x:true, y:true});
@@ -23,7 +25,7 @@ window.addEventListener("load",function() {
     //load assets
     //knows to look in "data" folder for tmx & json
     //looks in "images" folder for png
-    Q.loadTMX("myLevel.tmx, sprites.json, sprites.png", function(){
+    Q.load("sprites.json, sprites.png, sky.png, mountains.png, ground.png", function(){
       //compile the sheets for the sprites.png which needs sprites.json
       //using the json keys I can associate sprites with the right assests
       Q.compileSheets("sprites.png","sprites.json");
