@@ -1,7 +1,7 @@
 //listen for load event to be trigger
 window.addEventListener("load",function() {
   var Q = window.Q = Quintus({development: true})
-    .include("Scenes, Sprites, 2D, Input, Touch, UI, TMX, Audio")
+    .include("Scenes, Sprites, 2D, Input, Touch, UI, TMX, Audio, Anim")
     .include("ActionPlatformerPlayer, ActionPlatformerEnemy, ActionPlatformerBullet") 
     .setup({
       width: 640,   //to fit devices with a screne resolution of 1280 x 720
@@ -15,8 +15,8 @@ window.addEventListener("load",function() {
     //define scene "level"
     Q.scene("level", function(stage){
       stage.insert(new Q.Repeater({asset: "sky.png", speedX: 0.25, speedY: 0, type:0}));
-      stage.insert(new Q.Repeater({asset: "mountains.png", speedX: 0.25, speedY: 0, type:0}));
-      stage.insert(new Q.Repeater({asset: "ground.png", speedX: 0.25, speedY: 0, type:0}));
+      stage.insert(new Q.Repeater({asset: "mountains.png", speedX: 0.5, speedY: 0, type:0}));
+      stage.insert(new Q.Repeater({asset: "ground.png", speedX: 1, speedY: 0, type:0}));
       //get the palyer
       var player = Q("Player").first();
       stage.add("viewport").follow(player,{x:true, y:true});
