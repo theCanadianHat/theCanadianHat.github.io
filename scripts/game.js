@@ -14,9 +14,9 @@ window.addEventListener("load",function() {
 
     //define scene "level"
     Q.scene("level", function(stage){
-      stage.insert(new Q.Repeater({asset: "sky.png", speedX: 0.25, speedY: 0, type:0}));
-      stage.insert(new Q.Repeater({asset: "mountains.png", speedX: 0.5, speedY: 0, type:0}));
-      stage.insert(new Q.Repeater({asset: "ground.png", speedX: 1, speedY: 0, type:"collision"}));
+      stage.insert(new Q.Repeater({asset: "sky.png", speedX: 0.25, speedY: 0, type: 0}));
+      stage.insert(new Q.Repeater({asset: "mountains.png", speedX: 0.5, speedY: 0, type: 0}));
+      stage.insert(new Q.Repeater({asset: "ground.png", speedX: 1, speedY: 0, collision: true}));
       stage.insert(new Q.Player());
       //get the palyer
       var player = Q("Player").first();
